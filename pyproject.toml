@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-project-template"
+version = "0.1.0"
+authors = [
+    {name = "Your Name", email = "your-mail@email.com"},
+]
+description = "A Python project template."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+]
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+"mypy",
+]
+test = [
+  "pytest",
+]
+all = [
+  "python-project-template[dev,test]",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = ['py39','py310','py311']
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+testpaths = [
+  "tests",
+]
