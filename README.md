@@ -20,4 +20,3 @@ To build a readable and maintainable code base, this template is equipped with t
 - Formatting  $\rightarrow$ Restructures code to appear in a consistent way by following a set of custom rules
 - Linting  $\rightarrow$ Linting analyses how code runs and helps detecting errors before runtime
 - Type checking $\rightarrow$  Helps identifying incompatible code so that you can catch bugs before runtime
-
