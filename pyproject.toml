@@ -1,43 +1,29 @@
-[build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-packages = ["python_project_template"]
-
 [project]
-name = "python-project-template"
+name = "pyproject-template"
 version = "0.1.0"
+description = "A python project template."
 authors = [
-    {name = "Your Name", email = "your-mail@email.com"},
+    {name = "Alejandra De Luna", email = "aledelunap@gmail.com"},
 ]
-description = "A Python project template."
-readme = "README.md"
+dependencies = []
 requires-python = ">=3.9"
-dependencies = [
-]
+readme = "README.md"
 license = {text = "MIT"}
+
 
 [project.optional-dependencies]
 dev = [
-  "ruff",
-"mypy",
-]
-test = [
-  "pytest",
-]
-all = [
-  "python-project-template[dev,test]",
+    "ruff>=0.2.1",
+    "mypy>=1.8.0",
 ]
 
 [tool.ruff]
-line-length = 88
-target-version = ['py39','py310','py311']
-include = '\.pyi?$'
+target-version = "py39"
 
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
-testpaths = [
-  "tests",
+[tool.ruff.lint]
+select = [
+    "I",
 ]
+
+[tool.pdm]
+distribution = false

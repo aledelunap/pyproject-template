@@ -12,11 +12,25 @@ Template repository for Python projects.
 
 <h2  align="center">👋 About </h2>
 
-This template is intended to kick start Python projects.
+This template is intended to help kick-start Python projects.
 
 <h2 align="center">💻 Getting started</h2>
 To build a readable and maintainable code base, this template is equipped with the following tools:
 
 - Formatting  $\rightarrow$ Restructures code to appear in a consistent way by following a set of custom rules
+
+    ```bash
+    make format
+    ```
+
 - Linting  $\rightarrow$ Linting analyses how code runs and helps detecting errors before runtime
+
+    ```bash
+    make lint
+    ```
+
 - Type checking $\rightarrow$  Helps identifying incompatible code so that you can catch bugs before runtime
+
+    ```bash
+    make typecheck
+    ```
